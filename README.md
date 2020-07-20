@@ -6,6 +6,7 @@
 * ##### Gray Scale effect.
 * ##### Image Steganography.
 * ##### Color Overlay.
+* ##### Rainbow Filter.
 ---
 
 **Simple to use:**
@@ -34,6 +35,8 @@
   `Steganography is data hidden within data. Steganography is an encryption technique that can be used along with cryptography as an extra-secure method in which to protect data.`
 * ##### Color Overlay.
   `It creates a layer of RGB color over the image provided having a transparable opacity`
+* ##### Rainbow filter.
+  `It creates a layer of VIBGYOR color over the image provided having a transparable opacity`
 ---
 ###### *Click the heading to visit the Project*
 
