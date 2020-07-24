@@ -1,4 +1,4 @@
-# [ImageEditor](https://debugagrawal.github.io/ImageEditor/) 
+# [Image_Filter](https://shashankmisal.github.io/IMAGE-FILTER/) 
 ### A small Web Application currently providing 5 features to edit your image.
 * ##### Chroma Key effect.
 * ##### Gray Scale effect.
