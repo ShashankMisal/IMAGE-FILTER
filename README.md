@@ -1,7 +1,5 @@
-# [ImageEditor](https://codepen.io/debugagrawal/full/JjGmgWN) 
-
-### A small Web Application currently providing 4 features to edit your image.
-
+# [Image_Filter](https://shashankmisal.github.io/IMAGE-FILTER/) 
+### A small Web Application currently providing 5 features to edit your image.
 * ##### Chroma Key effect.
 * ##### Gray Scale effect.
 * ##### Image Steganography.
@@ -12,20 +10,15 @@
 **Simple to use:**
 ```
 1. Select any of the feature. 
-
 2. Upload your desired image. 
-
 3. Click the given button. 
-
 4. Download the image.
 ```
-
 ---
 ### Technologies Used:
 * Pure HTML+CSS
 * Basics of JavaScript
 ---
-
 #### *Key concepts*
 * ##### Chroma Key effect.
   `Chroma key compositing, or chroma keying, is a visual-effects and post-production technique for compositing (layering) two images or video streams together based on colour hues`
@@ -39,4 +32,3 @@
   `It creates a layer of VIBGYOR color over the image provided having a transparable opacity`
 ---
 ###### *Click the heading to visit the Project*
-

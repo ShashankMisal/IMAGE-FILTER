@@ -1,0 +1,241 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.header {
+  position: absolute;
+  font-family: "Lobster";
+  font-size: 3.8vw;
+  font-style: italic;
+  color: aqua;
+  margin-top: 5px;
+  margin-top: 20vw;
+}
+.header :hover {
+  position: fixed;
+  font-size: 3.8vw;
+  font-style: italic;
+  margin-top: 5px;
+  margin-top: 3vw;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  justify-items: center;
+  margin-top: 53vw;
+  margin-bottom: 5vw;
+}
+
+div :hover {
+  text-align: center;
+  font-family: "lobster";
+  text-decoration: solid;
+  border: 5px dashed greenyellow;
+  color: white;
+
+  background-color: black;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  margin-top:3.4vw;
+  text-align: center;
+  font-family: "lobster";
+  font-size: 4.5vh;
+  border: 5px solid greenyellow;
+  color: black;
+  padding: 10px 100px;
+  background-color: chartreuse;
+}
+footer{
+  display: flex;
+  flex-direction: row; 
+  text-align:center;
+  place-content: space-evenly;
+  font-size: 3vh;
+  padding: 0px 0px 2vw 0px ;
+  height:1vw;
+  width:95%;
+  font-family: 'lobster';
+  color: black;
+  background-color: black;
+  position: fixed;
+  bottom:0;
+  right:0;
+}
+footer :hover{
+  color: chartreuse;
+  background-color: rgb(0, 0, 0);
+}
+
+a{
+  text-align: center;
+  color:black;
+  text-decoration: none;
+}
+
+p{
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  height:1vw;
+  width:100%;
+  color:black;
+  text-decoration: none;
+
+}
+
+p :hover{
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  height:1vw;
+  width:100%;
+  color:chartreuse;
+  text-decoration: none;
+}
+#d{
+  animation-name: anim;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height:1vw;
+  width:5%;
+  background-color: chartreuse;
+}
+#s{
+  animation-name: anim;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height:1vw;
+  width:5%;
+  background-color: chartreuse;
+}
+@keyframes anim{
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media (max-width: 720px) {
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+      }
+    .header {
+        position: absolute;
+        font-family: "Lobster";
+        font-size:9vw;
+        font-style: italic;
+        color: aqua;
+        
+        margin-top: 75vw;
+      }
+
+      
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        justify-items: center;
+        margin-bottom:30vw;
+        margin-top:180vw;
+      }
+      
+      div :hover {
+        text-align: center;
+        font-family: "lobster";
+        text-decoration: solid;
+        border: 5px dashed greenyellow;
+        color: white;
+        background-color: black;
+      }
+      p{
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        height:1vh;
+        width:0 auto;
+        color:black;
+        text-decoration: none;
+      
+      }
+      
+      p :hover{
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        height:1vh;
+        width:0 auto;
+        color:chartreuse;
+        text-decoration: none;
+      }
+      
+      input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        justify-items: center;
+        margin-top: 12vw;
+        text-align: center;
+        font-family: "lobster";
+        font-size: 6vw;
+        border: 5px solid greenyellow;
+        color: black;
+        padding: 2.2vw 20vw;
+        background-color: chartreuse;
+      }
+      #d{
+        animation-name: anim;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height:2vh;
+        width:8%;
+        background-color: chartreuse;
+      }
+      #s{
+        animation-name: anim;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height:2vh;
+        width:8%;
+        background-color: chartreuse;
+      }
+}
