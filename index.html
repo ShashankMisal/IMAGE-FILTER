@@ -1,61 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main/index.css" />
-    <link rel="stylesheet" href="main/function.js" />
-    <link rel="shortcut icon" type="image/*" href="main/Images/logo.png"/>
-    <title>Image-Filter</title>
-  </head>
 
-  <body>
-    <section class="header" style="text-shadow: 9px 7px 5px dimgray;">
-      <a id="head_a" href="#features">Welcome To Image-Filter</a>
-    </section>
-    <div id="features">
-      <input
-        type="button"
-        value="Green Screen Effect"
-        onclick="parent.open('main/index.html');soundIndex()"
-      />
-      <input
-        type="button"
-        value="Gray Scale Effect"
-        onclick="parent.open('main/gray.html');soundIndex()"
-      />
-      <input
-        type="button"
-        value="ColorOverlay Effect"
-        onclick="parent.open('main/multi.html');soundIndex()"
-      />
-      <input
-        type="button"
-        value="Try Steganography"
-        onclick="parent.open('main/steg.html');soundIndex()"
-      />
-      <input
-        type="button"
-        value="RainBow Effect"
-        onclick="parent.open('main/rainbow.html');soundIndex()"
-      />
-    </div>
-    <!-- <footer ><p>----------------------------------------------------------------------------{ Get to know our Developers }---------------------------------------------------------------------------</p></footer> -->
-    <footer id="arrow">
-      <a href="#content">
-        <img id="size" src="main/Images/arrow.png"></img></a>
-    </footer>
-    <a href="https://github.com/DebugAgrawal" target="_blank"
-    > <footer id="d"></footer></a>
-    <a href="https://github.com/ShashankMisal" target="_blank"
-    > <footer id="s"></footer></a>
-    <script src="main/function.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="main/CSS/index.css" />
+  <link rel="stylesheet" href="../js/function.js" />
+  <link rel="shortcut icon" type="image/*" href="main/Images/logo.png" />
+  <title>Image-Filter</title>
+</head>
+
+<body>
+  <section class="header" style="text-shadow: 9px 7px 5px dimgray;">
+    <a id="head_a" href="#features">Welcome To Image-Filter</a>
+  </section>
+  <div id="features">
+    <input type="button" value="Green Screen Effect" onclick="parent.open('main/HTML/greenscreen.html');soundIndex()" />
+    <input type="button" value="Gray Scale Effect" onclick="parent.open('main/HTML/grayscale.html');soundIndex()" />
+    <input type="button" value="ColorOverlay Effect" onclick="parent.open('main/HTML/overlay.html');soundIndex()" />
+    <input type="button" value="Try Steganography" onclick="parent.open('main/HTML/steganography.html');soundIndex()" />
+    <input type="button" value="RainBow Effect" onclick="parent.open('main/HTML/rainbow.html');soundIndex()" />
+  </div>
+  <!-- <footer ><p>----------------------------------------------------------------------------{ Get to know our Developers }---------------------------------------------------------------------------</p></footer> -->
+  <footer id="arrow">
+    <a href="#content">
+      <img id="size" src="main/Images/arrow.png"></img></a>
+  </footer>
+  <a href="https://github.com/DebugAgrawal" target="_blank">
+    <footer id="d"></footer>
+  </a>
+  <a href="https://github.com/ShashankMisal" target="_blank">
+    <footer id="s"></footer>
+  </a>
+  <script src="../js/function.js"></script>
+</body>
+
 </html>
