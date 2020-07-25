@@ -113,6 +113,11 @@ p :hover{
   font-size: 1.5vw;
 }
 
+#size{
+  height:1.5vw;
+}
+
+
 #d{
   animation-name: anim;
   animation-duration:3s;
@@ -256,5 +261,8 @@ p :hover{
         font-size: 5vw;
         height: 4.5vw;
         width:100%;
+      }
+      #size{
+        height:4vw;
       }
 }
