@@ -12,13 +12,6 @@ body {
   margin-top: 5px;
   margin-top: 20vw;
 }
-/* .header :hover {
-  position: fixed;
-  font-size: 3.8vw;
-  font-style: italic;
-  margin-top: 5px;
-  margin-top: 3vw;
-} */
 
 #head_a{
   text-align: center;
@@ -78,18 +71,14 @@ footer{
   bottom:0;
   right:0;
 }
-footer :hover{
-  color: chartreuse;
-  background-color: rgb(0, 0, 0);
-}
 
 a{
   text-align: center;
-  color:black;
+  color: chartreuse;
   text-decoration: none;
 }
 
-p{
+/* p{
   position: fixed;
   text-align: center;
   bottom: 0;
@@ -110,7 +99,20 @@ p :hover{
   width:100%;
   color:chartreuse;
   text-decoration: none;
+} */
+
+#arrow{
+  animation-name: anim;
+  animation-duration:3s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  justify-content:space-evenly ;
+  font-size: 1.5vw;
 }
+
 #d{
   animation-name: anim;
   animation-duration:3s;
@@ -134,18 +136,23 @@ p :hover{
   background-color: chartreuse;
 }
 @keyframes anim{
-  25%{
+  0%{
     opacity: 0;
+  }
+  25%{
+    opacity: 1;
   }
   50%{
-    opacity: 1;
-  }
-  75%{
     opacity: 0;
   }
-  100%{
+  75%{
     opacity: 1;
   }
+  100%{
+    opacity: 0;
+  }
+
+
 }
 @media (max-width: 720px) {
     body {
@@ -243,5 +250,11 @@ p :hover{
         height:2vh;
         width:8%;
         background-color: chartreuse;
+      }
+      #arrow{
+        
+        font-size: 5vw;
+        height: 4.5vw;
+        width:100%;
       }
 }
