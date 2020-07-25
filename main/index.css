@@ -12,12 +12,18 @@ body {
   margin-top: 5px;
   margin-top: 20vw;
 }
-.header :hover {
+/* .header :hover {
   position: fixed;
   font-size: 3.8vw;
   font-style: italic;
   margin-top: 5px;
   margin-top: 3vw;
+} */
+
+#head_a{
+  text-align: center;
+  text-decoration: none;
+  color: lawngreen;
 }
 
 div {
