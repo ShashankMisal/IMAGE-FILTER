@@ -9,6 +9,8 @@ var AVG_COLOR;
 var AUDIO_INDEX = new Audio('main/Audio/smack.mp3');
 var AUDIO_OTHERS = new Audio('../Audio/cash.mp3');
 
+
+// ----------------------UPLOAD & RESIZING SECTION----------------------------------
 function upload1() {
   var f = document.getElementById("FOREGROUND_INP_ID");
   FOREGROUND_IMG = new SimpleImage(f);
@@ -28,7 +30,6 @@ function changeSize() {
   BACKGROUND_IMG.drawTo(SECOND_CANVAS_ID);
 }
 
-
 function isForeGroundImageUploaded() {
   if (FOREGROUND_IMG == null || !FOREGROUND_IMG.complete()) {
     alert("Please upload a Foreground image");
@@ -44,8 +45,6 @@ function isBackGroundImageUploaded() {
   }
   return true;
 }
-
-
 
 function checkImageSize() {
   var wbg = BACKGROUND_IMG.getWidth();
@@ -63,9 +62,9 @@ function alert1()
 {
   alert("Make sure your image has greeen Background.");
 }
+// ...................................X.......................................................
 
-
-
+// ---------------------------_GreenScreen_Effect_CODE_-----------------------------------------
 function mergeGreenScreen() {
 
   if (isForeGroundImageUploaded() && isBackGroundImageUploaded()) {
@@ -89,7 +88,9 @@ function mergeGreenScreen() {
     AUDIO_OTHERS.play();
   }
 }
+// ...................................X.......................................................
 
+// ---------------------------_STEGANOGRAPHY_CODE_-----------------------------------------
 function clearBits(value) {
   return Math.floor(value / 16) * 16;
 }
@@ -112,7 +113,6 @@ function chopImage2(image) {
   return image;
 
 }
-
 
 function combineImages(image1, image2) {
   var ouput_image = new SimpleImage(image1.getWidth(), image1.getHeight());
@@ -174,7 +174,9 @@ function decrypt() {
 
   }
 }
+// ...................................X.......................................................
 
+//---------------------------_GRAYSCALE_CODE_-----------------------------------------
 function makegray() {
   if (isForeGroundImageUploaded()) {
     GRAY_IMG = new SimpleImage(FOREGROUND_IMG.getWidth(), FOREGROUND_IMG.getHeight());
@@ -191,6 +193,10 @@ function makegray() {
     AUDIO_OTHERS.play();
   }
 }
+//...................................X.......................................................
+
+
+//---------------------------_COLOR_OVERLAY_CODE_-----------------------------------------
 function doOverlay() {
   if (isForeGroundImageUploaded()) {
     OVERLAY_IMG = FOREGROUND_IMG;
@@ -215,7 +221,10 @@ function doOverlay() {
     AUDIO_OTHERS.play();
   }
 }
+//...................................X.......................................................
 
+
+//---------------------------_RAINBOW_EFFECT_CODE_-----------------------------------------
 function makeRainBow() {
   if (isForeGroundImageUploaded()) {
     RAINBOW_IMG = FOREGROUND_IMG;
@@ -352,6 +361,11 @@ function doRed() {
   pixel.setBlue(blue);
 }
 
+//...................................X.................................................
+
+
+//---------------------------_CLEAR_FUNCTIONS_-----------------------------------------
+
 function clearGreenScreen() {
   clearCanvas(FIRST_CANVAS_ID);
   clearCanvas(SECOND_CANVAS_ID);
@@ -401,7 +415,12 @@ function clearCanvas(canvas) {
   var context = canvas.getContext("2d");
   context.clearRect(0, 0, canvas.width, canvas.height);
 }
+//...................................X.......................................................
 
+
+//---------------------------AUDIO_CODE_-----------------------------------------
 function soundIndex() {
   AUDIO_INDEX.play();
 }
+//...................................X............................................
+
