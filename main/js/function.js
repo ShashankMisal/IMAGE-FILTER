@@ -81,6 +81,7 @@ function mergeGreenScreen() {
 
     }
     COMPOSITE_IMG.drawTo(COMPOSITE_CANVAS_ID);
+    AUDIO_OTHERS.play();
   }
 }
 
@@ -136,6 +137,7 @@ function encrypt() {
     ENCRYPTED_IMG = combineImages(FOREGROUND_IMG, BACKGROUND_IMG);
 
     ENCRYPTED_IMG.drawTo(ENCRYPT_CANVAS_ID);
+    AUDIO_OTHERS.play();
   }
 }
 
@@ -158,6 +160,7 @@ function decrypt() {
     if (ENCRYPTED_IMG != null) {
       var extractedImg = extractHiddenImage(ENCRYPTED_IMG);
       extractedImg.drawTo(DECRYPT_CANVAS_ID);
+      AUDIO_OTHERS.play();
     }
     else {
       alert("Please EnCrypt the Image before Decrypting");
@@ -179,6 +182,7 @@ function makegray() {
       g.setBlue(grayc);
     }
     GRAY_IMG.drawTo(GRAY_CANVAS_ID);
+    AUDIO_OTHERS.play();
   }
 }
 function doOverlay() {
@@ -202,6 +206,7 @@ function doOverlay() {
       }
     }
     OVERLAY_IMG.drawTo(OVERLAY_CANVAS_ID);
+    AUDIO_OTHERS.play();
   }
 }
 
@@ -233,6 +238,7 @@ function makeRainBow() {
       }
     }
     RAINBOW_IMG.drawTo(RAINBOW_CANVAS_ID);
+    AUDIO_OTHERS.play();
   }
 }
 
@@ -351,17 +357,7 @@ function clearGreenScreen() {
   COMPOSITE_IMG = null
 }
 
-
-function clearDecrypt() {
-  clearCanvas(SECOND_CANVAS_ID);
-  clearCanvas(DECRYPT_CANVAS_ID);
-  clearCanvas(FIRST_CANVAS_ID);
-  clearCanvas(ENCRYPT_CANVAS_ID);
-  document.getElementById("FOREGROUND_INP_ID").value="" ;
-  document.getElementById("BACKGROUND_INP_ID").value="" ;
-  BACKGROUND_IMG = null;
-}
-function clearEncrypt() {
+function clearStegenography() {
   clearCanvas(SECOND_CANVAS_ID);
   clearCanvas(DECRYPT_CANVAS_ID);
   clearCanvas(FIRST_CANVAS_ID);
@@ -369,7 +365,9 @@ function clearEncrypt() {
   document.getElementById("FOREGROUND_INP_ID").value="" ;
   document.getElementById("BACKGROUND_INP_ID").value="" ;
   FOREGROUND_IMG = null;
+  BACKGROUND_IMG = null;
 }
+
 function clearGrayScale() {
   clearCanvas(FIRST_CANVAS_ID);
   clearCanvas(GRAY_CANVAS_ID);
@@ -400,7 +398,4 @@ function clearCanvas(canvas) {
 
 function soundIndex() {
   AUDIO_INDEX.play();
-}
-function soundOthers() {
-  AUDIO_OTHERS.play();
 }
