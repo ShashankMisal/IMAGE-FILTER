@@ -54,14 +54,14 @@ function checkImageSize() {
   var hfg = FOREGROUND_IMG.getHeight();
 
   if (wbg != wfg || hbg != hfg) {
-    alert("sizes are not the same");
+    alert("Sizes are not the same");
     changeSize();
   }
 }
 
 function alert1()
 {
-  alert("Make sure your image has greeen Background .");
+  alert("Make sure your image has greeen Background.");
 }
 
 
@@ -114,22 +114,22 @@ function chopImage2(image) {
 }
 
 
-function combineImages(start, hide) {
-  var answer = new SimpleImage(start.getWidth(), start.getHeight());
+function combineImages(image1, image2) {
+  var ouput_image = new SimpleImage(image1.getWidth(), image1.getHeight());
 
-  for (var px of answer.values()) {
+  for (var px of ouput_image.values()) {
     var x = px.getX();
     var y = px.getY();
 
-    var sp = start.getPixel(x, y);
-    var hp = hide.getPixel(x, y);
+    var image1_pixel = image1.getPixel(x, y);
+    var image2_pixel = image2.getPixel(x, y);
 
-    px.setRed(sp.getRed() + hp.getRed());
-    px.setGreen(sp.getGreen() + hp.getGreen());
-    px.setBlue(sp.getBlue() + hp.getBlue());
+    px.setRed(image1_pixel.getRed() + image2_pixel.getRed());
+    px.setGreen(image1_pixel.getGreen() + image2_pixel.getGreen());
+    px.setBlue(image1_pixel.getBlue() + image2_pixel.getBlue());
 
   }
-  return answer;
+  return ouput_image;
 }
 
 function encrypt() {
