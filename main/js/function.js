@@ -21,7 +21,7 @@ function upload2() {
 }
 
 function changeSize() {
-  alert("\t\tRestoring Sizes \nEverything under control");
+  alert("Restoring Sizes \nEverything under control");
   BACKGROUND_IMG.setSize(FOREGROUND_IMG.getWidth(), FOREGROUND_IMG.getHeight());
   var secondCanvasContext = SECOND_CANVAS_ID.getContext("2d");
   secondCanvasContext.clearRect(0, 0, FIRST_CANVAS_ID.width, FIRST_CANVAS_ID.height);
@@ -57,6 +57,11 @@ function checkImageSize() {
     alert("sizes are not the same");
     changeSize();
   }
+}
+
+function alert1()
+{
+  alert("Make sure your image has greeen Background .");
 }
 
 
@@ -131,13 +136,14 @@ function encrypt() {
 
   if (isForeGroundImageUploaded() && isBackGroundImageUploaded()) {
     checkImageSize();
-
+    
     FOREGROUND_IMG = chopImage1(FOREGROUND_IMG);
     BACKGROUND_IMG = chopImage2(BACKGROUND_IMG);
     ENCRYPTED_IMG = combineImages(FOREGROUND_IMG, BACKGROUND_IMG);
 
     ENCRYPTED_IMG.drawTo(ENCRYPT_CANVAS_ID);
     AUDIO_OTHERS.play();
+    alert("!!! Congratulations, your  image has been successfully Encrypted!!!\n!!!Observe Carefully..!!!\nNow try decrypting your image");
   }
 }
 
