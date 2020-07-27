@@ -392,4 +392,7 @@ a:hover {
     box-shadow: 5px 5px 3px 3px black;
     border-radius: 1em;
   }
+  li:hover {
+    text-transform: capitalize;
+  }
 }
